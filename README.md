@@ -766,7 +766,6 @@ Gateway:     10.10.10.1
 
 ## References and inspiration
 
-- README presentation and hardware-documentation inspiration: [LuxDMX](https://github.com/tombueng/LuxDMX)
 - Raspberry Pi Pico documentation: [Raspberry Pi documentation](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html)
 - Arduino-Pico core documentation: [arduino-pico.readthedocs.io](https://arduino-pico.readthedocs.io/)
 
