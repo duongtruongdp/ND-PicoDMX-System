@@ -2,7 +2,7 @@
 
 <p align="center">
   <strong>Budget-friendly, DIY 4-port Art-Net / sACN to DMX512 node built around the Raspberry Pi Pico.</strong><br>
-  <strong>Node DMX512 4 cổng thân thiện ngân sách, dễ DIY, sử dụng Raspberry Pi Pico.</strong>
+  <strong>Node DMX512 4 cổng giá rẻ, dễ DIY, sử dụng Raspberry Pi Pico.</strong>
 </p>
 
 <p align="center">
@@ -1494,5 +1494,5 @@ Gateway:     10.10.10.1
 
 <p align="center">
   <strong>ND DMX SYSTEM · Built for practical DIY lighting control.</strong><br>
-  <strong>Được xây dựng cho các hệ thống điều khiển ánh sáng DIY thực tế.</strong>
+  <strong>Được xây dựng cho các hệ thống điều khiển ánh sáng DIY.</strong>
 </p>
