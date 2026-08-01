@@ -377,14 +377,9 @@ Use a supply with sufficient current for both branches and maintain solid ground
 
 ## 6. Pinout & Wiring
 
-### Wiring-diagram placeholder
-
-<!-- WIRING DIAGRAM START -->
-<!-- Add your final diagram to the repository, then uncomment the next line. -->
-<!-- ![ND DMX NODE 4U Wiring Diagram](docs/images/nd-dmx-node-4u-wiring.png) -->
-<!-- WIRING DIAGRAM END -->
-
-> Suggested image path: `images/ND DMX SYSTEM WIRING DIAGRAM.jpg`
+<p align="center">
+  <a href="[https://luxdmx.org/video](https://github.com/duongtruongdp/ND-PicoDMX-System)"><img src="images/ND DMX SYSTEM WIRING DIAGRAM.jpg" alt="ND DMX NODE 4U Wiring Diagram" width="100%"></a>
+</p>
 
 ### W5500 ↔ Raspberry Pi Pico
 
@@ -1117,14 +1112,9 @@ Chọn nguồn đủ dòng cho cả hai nhánh và giữ kết nối GND chắc 
 
 ## 6. Sơ Đồ Chân Kết Nối — Pinout & Wiring
 
-### Vị trí chèn hình wiring diagram
-
-<!-- WIRING DIAGRAM START -->
-<!-- Thêm hình vào repository rồi bỏ dấu comment ở dòng tiếp theo. -->
-<!-- ![Sơ đồ kết nối ND DMX NODE 4U](docs/images/nd-dmx-node-4u-wiring.png) -->
-<!-- WIRING DIAGRAM END -->
-
-> Đường dẫn ảnh đề xuất: `docs/images/nd-dmx-node-4u-wiring.png`
+<p align="center">
+  <a href="[https://luxdmx.org/video](https://github.com/duongtruongdp/ND-PicoDMX-System)"><img src="images/ND DMX SYSTEM WIRING DIAGRAM.jpg" alt="ND DMX NODE 4U Wiring Diagram" width="100%"></a>
+</p>
 
 ### W5500 ↔ Raspberry Pi Pico
 
