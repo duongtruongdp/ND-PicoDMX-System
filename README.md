@@ -1,8 +1,8 @@
 # ND-PicoDMX-System
 
 <p align="center">
-  <strong>Budget-friendly, DIY 4-port Art-Net / sACN to DMX512 node built around the Raspberry Pi Pico.</strong><br>
-  <strong>Node DMX512 4 cổng giá rẻ, dễ DIY, sử dụng Raspberry Pi Pico.</strong>
+  <strong>Budget-friendly, DIY 4-port Art-Net / sACN to DMX512 node built around the Raspberry Pi Pico with live web dashboard for only 45$.</strong><br>
+  <strong>Node DMX512 4 cổng giá rẻ chỉ 1.200.000 VND, dễ dàng DIY với giao diện quản lý web, sử dụng Raspberry Pi Pico.</strong>
 </p>
 
 <p align="center">
