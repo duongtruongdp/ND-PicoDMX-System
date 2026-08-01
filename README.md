@@ -339,21 +339,22 @@ The internal sensor is useful for trend monitoring, not precision ambient measur
 
 | Qty. | Component | Minimum recommendation | Purpose / notes |
 |---:|---|---|---|
-| 1 | Raspberry Pi Pico | Standard RP2040 Pico, 2 MB flash | Main processor |
-| 1 | Pico expansion board | 7–12 V DC input with regulated rails | Accepts the 12 V node branch and powers the Pico system |
-| 1 | W5500 Ethernet module | SPI module, 3.3 V logic | Wired network interface |
-| 4 | Auto-direction TTL-to-RS485 modules | 250 kbit/s or faster, compatible with 3.3 V logic | One transmitter per DMX output |
-| 4 | XLR-5 female panel connectors | Metal or quality plastic chassis type | DMX output connectors |
+| 1 | [Raspberry Pi Pico](https://vi.aliexpress.com/item/1005012706861207.html)| Standard RP2040 Pico, 2 MB flash | Main processor |
+| 1 | [Pico expansion board](https://vi.aliexpress.com/item/1005005292085342.html) | 7–12 V DC input with regulated rails | Accepts the 12 V node branch and powers the Pico system |
+| 1 | [W5500 Ethernet module](https://vi.aliexpress.com/item/1005012641099047.html) | SPI module, 3.3 V logic | Wired network interface |
+| 4 | [Auto-direction TTL-to-RS485 modules](https://vi.aliexpress.com/item/1005003056616563.html) | 250 kbit/s or faster, compatible with 3.3 V logic | One transmitter per DMX output |
+| 4 | [XLR-5 female panel connectors](https://vi.aliexpress.com/item/1005004974465236.html) | Metal or quality plastic chassis type | DMX output connectors |
 | 1 | 12 V DC router | LAN router with matching supply voltage | Connects node and lighting controller |
-| 1 | 12 V DC power supply | Sized for router + node; typically 2 A or greater after calculation | Main system supply |
-| 1 | Two-way fused power distribution | Separate fuse for node and router branches | Splits the 12 V input safely |
-| 1 | Ethernet cable | Cat5e or Cat6 | W5500 to router |
-| 1 set | Hook-up wire and connectors | Short TTL/SPI wires, suitable gauge power wire | Internal wiring |
-| 1 | Enclosure | Ventilated metal/plastic project enclosure | Mechanical protection |
+| 1 | [12 V DC power supply](https://vi.aliexpress.com/item/1005010390772322.html) | Sized for router + node; typically 2 A or greater after calculation | Main system supply |
+| 1 | [Two-way fused power distribution](https://vi.aliexpress.com/item/1005009381318344.html) | Separate fuse for node and router branches | Splits the 12 V input safely |
+| 1 | [Ethernet cable](https://vi.aliexpress.com/item/1005003335746833.html) | Cat5e or Cat6 | W5500 to router |
+| 1 set | [Hook-up wire and connectors](https://vi.aliexpress.com/item/1005002984683377.html) | Short TTL/SPI wires, suitable gauge power wire | Internal wiring |
+| 1 | 3D Print Enclosure | Ventilated metal/plastic project enclosure | Mechanical protection |
 | Optional | External status LED + resistor | 220 Ω–1 kΩ series resistor | Use a genuinely exposed GPIO; see GP23 warning below |
 | Optional | 100 nF decoupling capacitors | One close to each module supply | Local high-frequency decoupling |
 | Optional | Bulk capacitor | 220–470 µF on the regulated rail | Helps absorb load transients |
 | Optional | DMX terminator | 120 Ω between XLR pins 2 and 3 | Use at the end of the DMX cable, not automatically at every node output |
+
 
 > [!CAUTION]
 > Confirm the actual supply requirements printed on your W5500 and RS485 modules. Module boards with similar appearance may use different regulators, transceivers and VCC ranges. RP2040 GPIO is 3.3 V logic and is not 5 V tolerant.
@@ -1092,7 +1093,7 @@ Cảm biến này phù hợp để theo dõi xu hướng nhiệt, không phải 
 | 1 | Bộ chia nguồn hai nhánh có cầu chì | Cầu chì riêng cho node và router | Chia nguồn 12 V an toàn |
 | 1 | Dây mạng | Cat5e hoặc Cat6 | W5500 đến router |
 | 1 bộ | Dây điện và terminal | Dây SPI/TTL ngắn, dây nguồn đúng tiết diện | Đấu nối bên trong |
-| 1 | Hộp thiết bị | Có khe thông gió | Bảo vệ cơ khí |
+| 1 | Hộp thiết bị | Có khe thông gió, có thể tự thiết kế hộp in 3D | Bảo vệ cơ khí |
 | Tùy chọn | LED trạng thái + điện trở | Điện trở nối tiếp 220 Ω–1 kΩ | Dùng GPIO thực sự được đưa ra ngoài; xem cảnh báo GP23 |
 | Tùy chọn | Tụ 100 nF | Một tụ gần nguồn mỗi module | Decoupling cao tần |
 | Tùy chọn | Tụ nguồn lớn | 220–470 µF trên rail ổn áp | Hấp thụ tải biến thiên |
