@@ -1,39 +1,35 @@
-ND DMX NODE 4U v2.0.1
+💡 ND DMX NODE 4U (v2.0.1)
 ======================
 
-Recommended Arduino-Pico settings for a standard Raspberry Pi Pico:
-- Board: Raspberry Pi Pico
-- CPU Speed: 133 MHz
-- Flash Size: 2MB (no filesystem required)
-- USB Stack: Pico SDK
-- Optimize: Small (-Os)
+📌 🇬🇧 ENGLISH
 
-Network defaults:
-- Node IP: 10.10.10.10
-- Subnet: 255.255.255.0
-- Gateway/DNS: 10.10.10.1
-- Dashboard: http://10.10.10.10/
-- Status API: http://10.10.10.10/api/status
+1. Overview
 
-Dashboard architecture:
-- One static HTML/CSS/JS document stored in flash.
-- No Google Fonts, CDN, images, frameworks or external assets.
-- Impact headlines, Helvetica Neue body text, Consolas technical values.
-- HTML is transmitted with Content-Length and retry-safe 512-byte writes.
-- Art-Net and sACN are serviced between web transfer blocks.
-- Status refresh is one small JSON request per second.
+ND DMX NODE 4U is an ultra-low latency professional lighting control network gateway (Art-Net 4 & sACN ANSI E1.31 to 4-Port DMX512 Gateway). The device is powered by the dual-core Raspberry Pi Pico (RP2040) microcontroller combined with a hardware Ethernet TCP/IP controller W5500.
 
-After upload:
-1. Power-cycle the node.
-2. Put the computer on 10.10.10.x / 255.255.255.0.
-3. Open http://10.10.10.10/.
-4. Perform one hard refresh to clear the previous broken dashboard from cache.
+Firmware v2.0.1 utilizes an Asymmetric Multiprocessing (AMP) architecture combined with hardware Programmable I/O (PIO) blocks to output 4 independent DMX512 ports at a deterministic real-time frame rate (~40 Hz)—completely isolated from network packet handling and web dashboard tasks.
 
-Validation completed before delivery:
-- C++ syntax checked using API stubs.
-- Embedded JavaScript passed Node.js syntax checking.
-- HTML parsed successfully.
+2. DMX Fundamentals
 
-The firmware has not been compiled with your exact installed Arduino-Pico and
-Ethernet library versions or tested on your physical node. Test all four DMX
-ports and the local output test controls before production use.
+A. What is DMX512?
+
+DMX512 (Digital Multiplex 512) is the industry standard digital communication protocol used for controlling stage lighting equipment (Moving Heads, LED Pars, Fog Machines, Lasers, etc.).
+Universe: Each DMX512 line transmits a collection of 512 independent Channels.
+Channel Value (0 – 255): Each channel carries an 8-bit numerical value ranging from 0 (Off / 0%) to 255 (Full / 100%).
+DMX Address: Lighting fixtures read a block of sequential channels starting from their assigned base address.
+
+B. RS-485 Physical Layer
+
+DMX512 transmits differential signals over RS-485 via shielded twisted-pair cables (3-pin or 5-pin XLR):
+
+- Pin 1 (GND): Signal Ground / Cable Shield.
+- Pin 2 (Data -): Inverted Differential Signal.
+- Pin 3 (Data +): Non-inverted Differential Signal.
+
+C. DMX512 Microsecond Timing Structure
+
+DMX512 transmits data at a fixed baud rate of 250 kbit/s (each bit lasts exactly $4\ \mu\text{s}$). A full DMX frame consists of:
+- BREAK: Signal pulled LOW for $88\ \mu\text{s} - 105\ \mu\text{s}$ to signal the start of a new frame.
+- MAB (Mark After Break): Signal pulled HIGH for $12\ \mu\text{s} - 14\ \mu\text{s}$ to separate BREAK from data bytes.
+- Start Code: First transmitted byte (0x00 for standard lighting data).
+- 512 Data Bytes: Transmitted using UART 8N2 format (8 data bits, No parity, 2 stop bits).
