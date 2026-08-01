@@ -1122,7 +1122,7 @@ Chọn nguồn đủ dòng cho cả hai nhánh và giữ kết nối GND chắc 
 ## 6. Sơ Đồ Chân Kết Nối — Pinout & Wiring
 
 <p align="center">
-  <a href="[https://luxdmx.org/video](https://github.com/duongtruongdp/ND-PicoDMX-System)"><img src="images/ND DMX SYSTEM WIRING DIAGRAM.jpg" alt="ND DMX NODE 4U Wiring Diagram" width="100%"></a>
+  <a href="[https://github.com/duongtruongdp/ND-PicoDMX-System]"><img src="images/ND DMX SYSTEM WIRING DIAGRAM.jpg" alt="ND DMX NODE 4U Wiring Diagram" width="100%"></a>
 </p>
 
 ### W5500 ↔ Raspberry Pi Pico
@@ -1252,6 +1252,15 @@ Mở **Library Manager**, tìm **Ethernet** và cài Arduino Ethernet library.
    ```text
    http://10.10.10.10/
    ```
+<p align="center">
+  <a href="[https://github.com/duongtruongdp/ND-PicoDMX-System]"><img src="images/WEB DASHBOARD - 01.png" alt="Live Dashboard" width="100%"></a>
+</p>
+<p align="center">
+  <a href="[https://github.com/duongtruongdp/ND-PicoDMX-System]"><img src="images/WEB DASHBOARD - 02.png" alt="Live Dashboard" width="100%"></a>
+</p>
+<p align="center">
+  <a href="[https://github.com/duongtruongdp/ND-PicoDMX-System]"><img src="images/WEB DASHBOARD - 03.png" alt="Live Dashboard" width="100%"></a>
+</p>
 
 ### 7.6 Checklist test đầu tiên
 
