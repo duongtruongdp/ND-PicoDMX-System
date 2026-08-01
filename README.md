@@ -384,7 +384,7 @@ Use a supply with sufficient current for both branches and maintain solid ground
 <!-- ![ND DMX NODE 4U Wiring Diagram](docs/images/nd-dmx-node-4u-wiring.png) -->
 <!-- WIRING DIAGRAM END -->
 
-> Suggested image path: `docs/images/nd-dmx-node-4u-wiring.png`
+> Suggested image path: `images/ND DMX SYSTEM WIRING DIAGRAM.jpg`
 
 ### W5500 ↔ Raspberry Pi Pico
 
