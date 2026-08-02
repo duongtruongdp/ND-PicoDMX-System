@@ -512,13 +512,7 @@ For a standard Raspberry Pi Pico:
    http://10.10.10.10/
    ```
 <p align="center">
-  <a href="[https://github.com/duongtruongdp/ND-PicoDMX-System]"><img src="images/WEB DASHBOARD - 01.png" alt="Live Dashboard" width="100%"></a>
-</p>
-<p align="center">
-  <a href="[https://github.com/duongtruongdp/ND-PicoDMX-System]"><img src="images/WEB DASHBOARD - 02.png" alt="Live Dashboard" width="100%"></a>
-</p>
-<p align="center">
-  <a href="[https://github.com/duongtruongdp/ND-PicoDMX-System]"><img src="images/WEB DASHBOARD - 03.png" alt="Live Dashboard" width="100%"></a>
+  <a href="[https://github.com/duongtruongdp/ND-PicoDMX-System]"><img src="images/WEB DASHBOARD - FULL.png" alt="Live Dashboard" width="100%"></a>
 </p>
 
 ### 7.6 First test checklist
@@ -1253,13 +1247,7 @@ Mở **Library Manager**, tìm **Ethernet** và cài Arduino Ethernet library.
    http://10.10.10.10/
    ```
 <p align="center">
-  <a href="[https://github.com/duongtruongdp/ND-PicoDMX-System]"><img src="images/WEB DASHBOARD - 01.png" alt="Live Dashboard" width="100%"></a>
-</p>
-<p align="center">
-  <a href="[https://github.com/duongtruongdp/ND-PicoDMX-System]"><img src="images/WEB DASHBOARD - 02.png" alt="Live Dashboard" width="100%"></a>
-</p>
-<p align="center">
-  <a href="[https://github.com/duongtruongdp/ND-PicoDMX-System]"><img src="images/WEB DASHBOARD - 03.png" alt="Live Dashboard" width="100%"></a>
+  <a href="[https://github.com/duongtruongdp/ND-PicoDMX-System]"><img src="images/WEB DASHBOARD - FULL.png" alt="Live Dashboard" width="100%"></a>
 </p>
 
 ### 7.6 Checklist test đầu tiên
