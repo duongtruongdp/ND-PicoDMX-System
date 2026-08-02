@@ -6,6 +6,16 @@ This project follows the principles of **Keep a Changelog** and uses **Semantic 
 
 ---
 
+## [2.0.2] - 2026-08-02
+
+### 🚀 Improved
+
+- RP2040 internal temperature sensor read directly from ADC4 with trimmed averaging, plausibility checks and JSON-safe error reporting.
+<p align="center">
+  <a href="[https://github.com/duongtruongdp/ND-PicoDMX-System]"><img src="images/v2.0.1_temp_error.png" alt="v2.0.1 Temperature sensor error" width="100%"></a>
+</p>
+- System uptime comes from the RP2040 64-bit hardware timer and continues correctly when the dashboard is closed, reopened or refreshed.
+
 ## [2.0.1] - 2026-08-01
 
 ### ✨ Added
