@@ -1,0 +1,93 @@
+===========================================================
+INSTALLATION GUIDE
+===========================================================
+
+The firmware package contains the complete Arduino source code
+(.ino, .cpp files). It is not precompiled.
+
+You can build and upload the firmware using Arduino IDE or any
+compatible RP2040 development environment (PlatformIO, Arduino CLI, etc.).
+
+-----------------------------------------------------------
+REQUIREMENTS
+-----------------------------------------------------------
+
+• Arduino IDE 2.x (recommended)
+• Raspberry Pi Pico / RP2040 Board Package installed
+• Required libraries (see the /libraries or documentation)
+• USB cable
+
+-----------------------------------------------------------
+INSTALLATION STEPS
+-----------------------------------------------------------
+
+1. Download and extract the ND PicoDMX System package.
+
+2. Open Arduino IDE.
+
+3. Open the main firmware file:
+
+   ND_PicoDMX_System.ino
+
+4. Install any required libraries if Arduino IDE reports that
+   dependencies are missing.
+
+5. Select the correct board:
+
+   Tools → Board → Raspberry Pi RP2040 Boards
+   → Raspberry Pi Pico
+
+6. Select the correct USB port:
+
+   Tools → Port
+
+7. (Optional) Modify network settings or other configuration
+   parameters in the source code if desired.
+
+8. Click Verify (✓) to compile the firmware.
+
+9. Click Upload (→) to build and upload the firmware to the Pico.
+
+10. Wait until the upload is complete. The board will reboot
+    automatically and start the firmware.
+
+-----------------------------------------------------------
+FIRST CONNECTION
+-----------------------------------------------------------
+
+After the firmware starts, configure your computer to the same
+network range as the default IP address.
+
+Default IP Address : 10.10.10.10
+Subnet Mask        : 255.0.0.0
+Gateway            : 10.0.0.1
+
+Example PC IP:
+
+10.10.10.100
+
+Then open your web browser and navigate to:
+
+http://10.10.10.10
+
+-----------------------------------------------------------
+SUPPORTED DEVELOPMENT ENVIRONMENTS
+-----------------------------------------------------------
+
+✔ Arduino IDE 2.x (Recommended)
+✔ PlatformIO (VS Code)
+✔ Arduino CLI
+
+-----------------------------------------------------------
+NOTES
+-----------------------------------------------------------
+
+• The project is fully open source and intended for modification.
+• All source files (.ino, .cpp) should remain in the same
+  project folder when compiling.
+• If the board does not appear after upload, press the RESET button
+  or reconnect the power supply.
+• If uploading fails, hold the BOOTSEL button while connecting the
+  Pico to enter bootloader mode, then try uploading again.
+
+Enjoy building your own ND PicoDMX System!
