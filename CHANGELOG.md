@@ -6,6 +6,52 @@ This project follows the principles of **Keep a Changelog** and uses **Semantic 
 
 ---
 
+## [2.0.2 - STABLE] - 2026-08-05
+
+### 🚀 Removed
+
+1. DMX Engine
+  - Removed the experimental `spin_try_lock()` and direct hardware-register
+  spinlock helper used by earlier v2.0.2 test builds.
+  - Uses the official Pico SDK `spin_lock_blocking()` / `spin_unlock()` pair.
+  - Core 1 now enters the shared-buffer lock only when a new 40 Hz DMX frame is
+  due, instead of claiming the lock continuously in every Core 1 loop.
+
+2. The temperature feature has been completely removed from:
+  - ADC initialization and runtime;
+  - diagnostics structure;
+  - REST API;
+  - dashboard interface.
+This avoids the unusable ADC subsystem on the tested OEM RP2040 board.
+
+### 🚀 Improved
+
+- Added a 35 ms PIO/FIFO timeout and automatic state-machine recovery.
+- Preserved the original PIO program, 105 us BREAK, 14 us MAB, 513-byte DMX
+  frame, four output pins, and approximately 40 Hz frame schedule.
+- Core 1 loop and heartbeat diagnostics use atomic counters.
+- Added a controlled watchdog reboot if Core 1 stops producing heartbeat for
+  three consecutive seconds.
+- Uses the RP2040 64-bit hardware timer `time_us_64()`.
+- The authoritative uptime resets only when the MCU loses power or reboots.
+- The browser stores the latest uptime snapshot in `localStorage`.
+- After a hard refresh, the dashboard restores the continuing value while
+  waiting for the node API, then synchronizes to the node value.
+- The dashboard HTML is gzip-compressed inside the firmware.
+- Transfer size is reduced from about 34 KB to about 9 KB.
+- The browser may cache the static dashboard for one hour.
+- `/api/status` remains live and uncached.
+- Added strict sACN property-length and packet-boundary validation.
+- Malformed or truncated sACN packets are rejected before reading DMX slots.
+
+## Validation completed in this environment
+
+- Dashboard JavaScript passed `node --check`.
+- Temperature code and API fields are fully removed.
+- Old experimental `spin_try_lock`, `spin_unlock_unsafe`, and custom lock
+  helper are absent.
+
+
 ## [2.0.2] - 2026-08-02
 
 ### 🚀 Improved
